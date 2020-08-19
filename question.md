@@ -6,7 +6,7 @@ These are to be stored in an appropriate Hash Table for quick lookup.
 
 ### Task 1.1
 
-In `main.py`, write program code to read in the usernames and passwords from `contactlist.csv`, and store them in an appropriate data structure.
+In `main.py`, write program code to read in the contact details from `contactlist.csv`, and store them in an appropriate data structure.
 
 ### Task 1.2
 
