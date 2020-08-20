@@ -30,6 +30,6 @@ If two names have the same index, their contact details are to be stored togethe
 
 In `main.py`, write program code to store all the contact details from **Task 1.1**.
 
-By using appropriate test values, write print statements to show that `ContactDetails` is able to retrieve the correct contact details (returns `True` only if the contact details match).
+By using appropriate test values, write print statements to show that `ContactList` is able to retrieve the correct contact details (returns `True` only if the contact details match).
 
 Also print out the data stored internally in the Hash Table.
