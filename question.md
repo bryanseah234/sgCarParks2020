@@ -5,36 +5,24 @@ https://repl.it/@mrjsng/ExamPractice1
 
 ## Question 1
 
-The file `contactlist.csv` contains a comma-separated list of names, emails, and contact details.
-
-These are to be stored in an appropriate Hash Table for quick lookup.
+The file `hdb-carpark-information.csv` contains a comma-separated list of HDB carparks in Singapore.
 
 ### Task 1.1
 
-In `main.py`, write program code to read in the contact details from `contactlist.csv`, and store them in an appropriate data structure.
+In `main.py`, write program code to read in the contact details from `hdb-carpark-information.csv`, and store them in an appropriate data structure with the variable name `carpark_data`.
 
 ### Task 1.2
 
-Implement `ContactList`, a class that uses a Hash Table to store the contact details, with the name as the key. This class is to be defined in `classes.py` and imported into `main.py`.
+1. Calculate the total number of each **car_park_type**:
+   - surface carparks
+   - multi-storey carparks
+2. Return the **car_park_no** with the highest number of total carparks.
 
-Names are to be hashed using the following algorithm:
-
-```
-for char in name
-    cnum = ascii code of char
-    pnum = <index of char in name (1st char has index 1)>
-    add cnum*pnum to total
-return total
-```
-
-Use an appropriate method to generate an index from the hashed name. Store **all the fields** under this index.
-
-If two names have the same index, their contact details are to be stored together under that index. The name will be used to retrieve the correct set of contact details.
 
 ### Task 1.3
 
-In `main.py`, write program code to store all the contact details from **Task 1.1**.
+The `x_coord, y_coord` of Nanyang Junior College is `31630.2870, 36953.6515`.
 
-By using appropriate test values, write print statements to show that `ContactList` is able to retrieve the correct contact details (returns `True` only if the contact details match).
+Add another field, `distance`, to `carpark_data` for each entry. The value of this field is a float representing the straight-line distance between that carpark and Nanyang Junior College. Calculate the `distance` value for each **car_park_no**.
 
-Also print out the data stored internally in the Hash Table.
+Write a function, `sortByDistance()`, that takes in `carpark_data` as an argument and returns the data sorted by `distance`.
