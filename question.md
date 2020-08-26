@@ -13,19 +13,19 @@ In `main.py`, write program code to read in the contact details from `hdb-carpar
 
 ### Task 1.2
 
-1. Calculate the total number of each **car_park_type**:
-   - surface carparks
-   - multi-storey carparks
-2. Return the **car_park_no** with the highest number of total carparks.
+Calculate the total number of each **car_park_type**:
+- surface carparks
+- multi-storey carparks
 
+Display the total number of each **car_park_type**.
 
 ### Task 1.3
 
-The `x_coord, y_coord` of Nanyang Junior College is `31630.2870, 36953.6515`.
+Write a function, `sortByDistance()`, that takes in carpark data, an x-coordinate, and a y-coordinate as arguments, and returns carpark data sorted in **ascending order** of distance from the given point `x0`, `y0`.
 
-Write a function, `sortByDistance()`, that takes in `carpark_data` as an argument and returns the data sorted by `distance` **in ascending order**.
+The function should use the insertion sort algorithm to sort the carpark data.
 
-`distance` is defined as the square root of `x_coord` and `y_coord`.
+`distance` is defined as the square root of `x1 - x0` and `y1 - y0`, where `x1`, `y1` are the x- and y-coordinates of each carpark.
 
 ### Task 1.4
 
@@ -39,3 +39,5 @@ Create a webpage that:
 
 1. Displays an HTML form asking the user to enter a pair of coordinates, `x_coord` and `y_coord`,
 2. Displays the input coordinates, and the **car_park_no** of the nearest car park.
+
+Use this function to find the carpark nearest Nanyang Junior College. The `x_coord, y_coord` of Nanyang Junior College is `31630.2870, 36953.6515`.
