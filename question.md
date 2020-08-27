@@ -1,7 +1,7 @@
 
 
 
-https://repl.it/@mrjsng/ExamPractice2
+https://repl.it/@mrjsng/ExamPractice1
 
 # Question 1
 
@@ -9,7 +9,7 @@ The file `hdb-carpark-information.csv` contains a comma-separated list of HDB ca
 
 ### Task 1.1
 
-In `main.py`, write program code to read in the contact details from `hdb-carpark-information.csv`, and store them in an appropriate data structure with the variable name `carpark_data`.
+In `main.py`, write program code to read in the carpark details from `hdb-carpark-information.csv`, and store them in an appropriate data structure with the variable name `carpark_data`.
 
 ### Task 1.2
 
@@ -33,11 +33,11 @@ Write a function, `nearestCarpark(x_coord, y_coord)` that takes in two float var
 
 The nearest carpark is the one with the shortest `distance`.
 
+Use this function to find the carpark nearest Nanyang Junior College. The `x_coord, y_coord` of Nanyang Junior College is `31630.2870, 36953.6515`.
+
 ### Task 1.5
 
 Create a webpage that:
 
 1. Displays an HTML form asking the user to enter a pair of coordinates, `x_coord` and `y_coord`,
 2. Displays the input coordinates, and the **car_park_no** of the nearest car park.
-
-Use this function to find the carpark nearest Nanyang Junior College. The `x_coord, y_coord` of Nanyang Junior College is `31630.2870, 36953.6515`.
