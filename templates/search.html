@@ -4,13 +4,15 @@
         <title>Carpark Search</title>
     </head>
 	<body>
-		<h2>X-coordinates: {{ xcoords }}, Y-coordinates: {{ ycoords }}, nearest carpark: {{ address }} {{ number }}</h2>
+		<h4>You have entered: {{ xcoords }}, {{ ycoords }}</h4>
+		<h4> Nearest Carpark: {{ address }} {{ number }}</h4>
 		<form action = '/search' method="GET">
 			<label for ="xcoords">X-coordinates:</label><br>
 			<input type = "text" id="xcoords" name="xcoords" value=""><br>
 			<label for ="ycoords">Y-coordinates:</label><br>
 			<input type = "text" id="ycoords" name="ycoords" value=""><br>
-			<input type = "submit" value="Search">
+			
+			<input type = "submit" value="Search"><br>
 		</form>
 	</body>
 </html>
