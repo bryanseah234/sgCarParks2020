@@ -1,5 +1,3 @@
-# https://repl.it/@mrjsng/ExamPractice2
-
 # Task 1.1
 # Write your code here
 
