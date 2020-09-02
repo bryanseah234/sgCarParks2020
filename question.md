@@ -1,8 +1,3 @@
-
-
-
-https://repl.it/@mrjsng/ExamPractice2
-
 # Question 1
 
 The file `hdb-carpark-information.csv` contains a comma-separated list of HDB carparks in Singapore.
