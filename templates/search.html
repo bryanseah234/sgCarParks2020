@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Carpark Search</title>
+    </head>
+	<body>
+		<h2>X-coordinates: {{ xcoords }}, Y-coordinates: {{ ycoords }}, nearest carpark: {{ address }} {{ number }}</h2>
+		<form action = '/search' method="GET">
+			<label for ="xcoords">X-coordinates:</label><br>
+			<input type = "text" id="xcoords" name="xcoords" value=""><br>
+			<label for ="ycoords">Y-coordinates:</label><br>
+			<input type = "text" id="ycoords" name="ycoords" value=""><br>
+			<input type = "submit" value="Search">
+		</form>
+	</body>
+</html>
+
+
+
+<!-- <html>
+    <head>
+        <title>Carpark Search</title>
+    </head>
+    <body>
+        <p>x-coordinates: {{ x }}, y-coordinates: {{ y }}</p>
+        <p>nearest carpark = </p>
+		<p>address: {{ cp_address }} </p>
+		<p>number: {{ cp_number }}</p>
+        <form action='/search' method="get">
+        	<label>x-coordinate:</label><br>
+        	<input type="text" name="x" value=""><br>
+        	<label>y-coordinate:</label><br>
+        	<input type="text" name="y" value=""><br>
+        	<input type="submit" value="Search"><br>
+        </form>
+    </body>
+</html> -->

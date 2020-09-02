@@ -1,9 +1,7 @@
+# sgCarparks2020
+Project Goal: Return the nearest car park in Singapore given a pair of coordinates. Project Admin: Bryan.
 
-
-
-https://repl.it/@mrjsng/ExamPractice2
-
-# Question 1
+## Tasks:
 
 The file `hdb-carpark-information.csv` contains a comma-separated list of HDB carparks in Singapore.
 
