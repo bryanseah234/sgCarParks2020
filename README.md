@@ -1,4 +1,4 @@
-# sgCarparks2020
+# sgCarParks2020
 Project Goal: Return the nearest car park in Singapore given a pair of coordinates. Project Admin: Bryan.
 
 ## Tasks:
