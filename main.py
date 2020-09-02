@@ -1,4 +1,6 @@
 import math
+from flask import Flask, render_template, request, redirect
+from copy import copy
 # Task 1.1
 # Write your code here
 carpark_data = []
@@ -98,7 +100,9 @@ def nearestCarpark(x_coord, y_coord):
 # Write your code here
 
 
-from flask import Flask, render_template, request
+import math
+from flask import Flask, render_template, request, redirect
+from copy import copy
 
 app = Flask(__name__)
 
@@ -132,4 +136,5 @@ def search():
 #         # cp_name = nearest_cp['car_park_no']
 #         return render_template('search.html', x=x, y=y, cp_number=cp_number, cp_address=cp_address)
 
-app.run('0.0.0.0')
+if __name__ == '__main__':
+    app.run("0.0.0.0",debug=False, use_reloader=True)
