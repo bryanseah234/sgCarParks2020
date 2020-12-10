@@ -1,30 +1,76 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>Carpark Search</title>
+        <meta charset="UTF-8">
+        <meta http-equiv='cache-control' content='no-cache'> 
+        <meta http-equiv='expires' content='0'> 
+        <meta http-equiv='pragma' content='no-cache'> 
+        <title>
+            SG Carpark Search
+        </title>
+        <link href='https://fonts.googleapis.com/css?fam  ily=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <style>
+            .input {
+                color: white;
+                text-align: center;
+            }
+            #form1{
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #form2{
+                max-width: 240px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 13px;
+            }
+            #button{
+                max-width: 100px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 13px;
+            }
+            /* .error {
+                color: white;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 300px;
+            } */
+            h2 {
+                font-size: 40px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+        </style>
     </head>
-	<body>
-		<div class=instructions>
-			<h3>
-					How to use:<br>
-					1. Input an X-coord (preferably one in Singapore).<br>
-					2. Input an Y-coord (preferably one in Singapore).<br>
-					3. Press search.<br>
-					4. The name of the carpark which is nearest to you will show up.<br>
-					5. Enjoy!<br>
-			</h3>
-		</div>
-		<h4>You have entered: {{ xcoords }}, {{ ycoords }}</h4>
-		<h4> Nearest Carpark: {{ address }} {{ number }}</h4>
-		<form action = '/search' method="GET">
-			<label for ="xcoords">X-coordinates:</label><br>
-			<input type = "text" id="xcoords" name="xcoords" value=""><br>
-			<label for ="ycoords">Y-coordinates:</label><br>
-			<input type = "text" id="ycoords" name="ycoords" value=""><br>
-			
-			<input type = "submit" value="Search"><br>
-		</form>
-	</body>
+    <body>
+        <div class = input>
+            <h2>SG Carpark Search</h2>
+            <label>
+                <h3>
+                    You have entered: {{ xcoords }}, {{ ycoords }}<br>
+                    Nearest Carpark: {{ address }} {{ number }}<br>
+                </h3>
+            </label>
+            <form action="/search" ,method="GET">
+                <label for="xcoords">X-coordinates:</label><br>
+                <input type="text" name="xcoords"><br>
+                <label for="ycoords">Y-coordinates:</label><br>
+                <input type="text" name="ycoords"><br>
+				<button id='button' type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+            </form>  
+            <form id='form2' action='/' method='GET'>
+                <button id='button' type="submit" class="btn btn-primary btn-block btn-large">Refresh</button>
+            </form>
+        </div>
+    </body>
 </html>
 
 
