@@ -99,11 +99,6 @@ def nearestCarpark(x_coord, y_coord):
 # Task 1.5
 # Write your code here
 
-
-import math
-from flask import Flask, render_template, request, redirect
-from copy import copy
-
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
