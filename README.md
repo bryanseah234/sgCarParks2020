@@ -2,7 +2,7 @@
 code that returns the nearest car park in Singapore given a pair of coordinates.
 
 <p align="left">
-  <img src="https://pbs.twimg.com/profile_images/582352199814008832/GVZJ5FiC.jpg" />
+  <img src="https://pbs.twimg.com/profile_images/582352199814008832/GVZJ5FiC.jpg" width="300" height="300" />
 </p>
 
 ## Disclaimer:
