@@ -5,7 +5,7 @@ Flask-SocketIO==5.4.0
 Flask-WTF==1.2.2
 gevent==25.4.1
 gevent-websocket==0.10.1
-greenlet==3.2.4
+greenlet==3.2.5
 gunicorn==23.0.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
