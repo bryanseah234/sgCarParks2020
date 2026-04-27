@@ -13,4 +13,4 @@ MarkupSafe==3.0.3
 Werkzeug==3.1.6
 passlib==1.7.3
 python-engineio==4.13.1
-python-socketio==5.14.0
+python-socketio==5.16.1
