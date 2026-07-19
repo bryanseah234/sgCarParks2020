@@ -14,3 +14,4 @@ Werkzeug==3.1.8
 passlib==1.7.3
 python-engineio==4.13.2
 python-socketio==5.16.3
+setuptools>=83.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
