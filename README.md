@@ -1,4 +1,8 @@
 # Singapore Carparks 2020
+
+
+![Project screenshot](./screenshot.png)
+
 code that returns the nearest car park in Singapore given a pair of coordinates.
 
 <p align="left">
